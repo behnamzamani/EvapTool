@@ -1351,15 +1351,8 @@ pi=math.pi
 df_dwd['date']=pd.to_datetime(df_dwd['MESS_DATUM'])
 
 ##########################################################################
-#- compute evapotranspiration and open water evaporation
+#- compute open water evaporation
 ##########################################################################
-
-#-- input met data in DWD (Deutsche Wetter Dienst) format
-##- crop type: reed, tree, grass
-##- areas in m2
-##- source: Fao website chapters 3 and 4
-##- https://www.fao.org/3/X0490E/x0490e07.htm#solar%20radiation
-##- https://www.fao.org/3/X0490E/x0490e08.htm#chapter%204%20%20%20determination%20of%20eto
 
 G=0 #-soil heat flux, zero (ignored) for daily calculations
 
