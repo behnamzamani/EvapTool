@@ -25,35 +25,15 @@ from pandas import Timestamp
 import time
 import glob
 import calendar
-from statsmodels.tsa.seasonal import seasonal_decompose
-from scipy import stats
-from scipy import signal
-import pymannkendall as mk
-import multiprocessing as mp
 import re
 from time import sleep
 import itertools
-from tqdm import tqdm
-import random
 import fileinput
-import urllib.request
-from progress.bar import Bar
-import subprocess
 import shutil
-import netCDF4 as nc
-import matplotlib
-#matplotlib.use('Agg') #-- active when on cluster
-import matplotlib.dates as mdates
-from matplotlib.ticker import MultipleLocator, FormatStrFormatter
-import matplotlib.pyplot as plt
 from matplotlib import colors
 import os
 from pandas import Timestamp
-import matplotlib.dates as dates
-import pyny3d.geoms as pyny
 import warnings
-import random
-import decimal
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore",category=matplotlib.MatplotlibDeprecationWarning)
@@ -1353,6 +1333,7 @@ df_dwd['date']=pd.to_datetime(df_dwd['MESS_DATUM'])
 ##########################################################################
 #- compute open water evaporation
 ##########################################################################
+
 
 G=0 #-soil heat flux, zero (ignored) for daily calculations
 
